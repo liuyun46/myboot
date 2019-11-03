@@ -35,6 +35,6 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        System.out.println("hlell");
+        System.out.println("ye");
     }
 }

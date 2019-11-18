@@ -1,5 +1,6 @@
 package com.ly975.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.ly975.pojo.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +13,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String test(){
-        return person.getName();
+        return JSON.toJSONString("hello");
+
     }
 }
